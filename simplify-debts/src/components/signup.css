@@ -1,0 +1,104 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.signup-container .signup-form {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(177, 105, 236);
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: #111;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  width: 48%; /* Reduced from 48% to allow for margin */
+}
+
+.form-group:first-child {
+  margin-right: 4%; /* Add margin between input boxes in the same row */
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #231c1c;
+  font-size: 0.9rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+  color: #111;
+  background-color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: auto;
+}
+
+.signup-button:hover {
+  background-color: #166fe5;
+}
+
+.login-redirect {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.login-redirect a {
+  color: #473d3d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-redirect a:hover {
+  text-decoration: underline;
+}
